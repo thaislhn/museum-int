@@ -1,13 +1,32 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>vite-websites</title>
-  </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="/src/main.js"></script>
-  </body>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vinyl Museum</title>
+  <link rel="stylesheet" href="/src/style.css">
+</head>
+<body>
+  <div id="app"></div>
+
+  <div class="container">
+    <h1>Add work</h1>
+
+    <form id="add-work-form">
+      <input type="text" id="titre" placeholder="titre album" required>
+      <input type="text" id="artiste" placeholder="artiste" required>
+      <input type="text" id="anne" placeholder="date" required>
+      <input type="text" id="genre" placeholder="genre" required>
+      <input type="text" id="duree" placeholder="duree" required>
+      <input type="text" id="label" placeholder="label" required>
+      <input type="text" id="image_url" placeholder="Link image URL" required>
+
+      <button type="submit">Submit</button>
+    </form>
+
+    <div id="cards"></div>
+  </div>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
 </html>
